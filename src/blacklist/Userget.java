@@ -29,7 +29,6 @@ public class Userget {
             File file = new File("D:/blacklist.txt");
             String input;
             BufferedReader reader = new BufferedReader(new FileReader(file));
-            //读取每一行数据并以“|”分割
             while ((input = reader.readLine()) != null) {
                 addUser(input);
             }
